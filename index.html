@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color guessing</title>
+    <title>Color guesser</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,10 +16,21 @@
     
         <div id="color"></div>
     </div>
+    <div class="text">
+        <p>meaning</p>
+        <p>text color</p>
+    </div>
 
-    <div id="control">
-        <p>No ⬅</p>
-        <p>➡ Yes</p>
+
+    <div class="control">
+        <div id="button">
+            <p>No</p>
+            <img src="left-arrow.svg">
+        </div>
+        <div id="button">
+            <img src="right-arrow.svg">
+            <p> Yes</p>
+        </div>
     </div>
 
     <script src="script.js"></script>

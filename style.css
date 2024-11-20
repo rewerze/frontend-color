@@ -37,9 +37,47 @@ h1 {
     width: 110px;
 }
 
-#control {
+#button {
+    display: flex;
+    padding: 1rem 5rem;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: rgb(224, 81, 81);
+    border: 5px solid rgb(94, 0, 0);
+}
+
+p {
+    font-weight: 600;
+}
+
+.control{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-end;
+    top: 10rem;
+    position: relative;
+}
+
+#button img {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    top: 0.8vh;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    gap: 5rem;
+    position: relative;
+    bottom: 2.2vh;
+}
+
+.text p {
+    border: 5px solid rgb(94, 0, 0);
+    padding: 1rem 5rem;
+    background-color: rgb(224, 81, 81);
 }

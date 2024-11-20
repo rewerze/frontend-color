@@ -1,6 +1,7 @@
 var colorList = ["red", "yellow", "green", "blue", "purple"];
 var meaning;
 var color;
+var delayTime = 100;
 Display();
 
 
@@ -26,14 +27,14 @@ document.addEventListener('keydown', (e) => {
                 setTimeout(function() {
                     document.getElementById('answer').textContent = "";
                     Display();
-                    }, 500);
+                    }, delayTime);
             }
             else {
                 document.getElementById('answer').textContent = "❌";
                 setTimeout(function() {
                     document.getElementById('answer').textContent = "";
                     Display();
-                }, 500);
+                }, delayTime);
             }
             break;
             case "ArrowRight":
@@ -42,14 +43,14 @@ document.addEventListener('keydown', (e) => {
                     setTimeout(function() {
                         document.getElementById('answer').textContent = "";
                         Display();
-                        }, 500);
+                        }, delayTime);
                 }
                 else {
                     document.getElementById('answer').textContent = "❌";
                     setTimeout(function() {
                         document.getElementById('answer').textContent = "";
                         Display();
-                    }, 500);
+                    }, delayTime);
                 }
                 break;
     }
